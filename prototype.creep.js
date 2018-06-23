@@ -13,7 +13,7 @@ var roles = {
 /**
 @function
 @param {StructureSpawn} spawn
-@param {array<string>} role
+@param {array} role
 @param {string} name
 **/
 Creep.prototype.spawn = function(spawn, role, name) {
