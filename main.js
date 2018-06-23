@@ -1,5 +1,5 @@
-require('config');
-require('protptype.creep');
+//require('config');
+//require('protptype.creep');
 require('role.harvester');
 
 module.exports.loop = function() {
