@@ -1,5 +1,5 @@
 var roles = {
-    harvester: require('role.harvester'),
+    harvester: require('role.harvester')
     //upgrader: require('role.upgrader'),
     //builder: require('role.builder'),
     //repairer: require('role.repairer'),

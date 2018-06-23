@@ -7,7 +7,7 @@ require('protptype.creep');
 var spawn = Game.spawns['Spawn1'];
 
 module.exports.loop = function() {
-  if (Game.creeps.length == 0) {
+  if (Game.creeps.length == 0 || Game.creeps.length = undefined) {
     console.log('spawn the creep');
     Creep.spawn(harvester.role, spawn, 'Harvester1');
   }
