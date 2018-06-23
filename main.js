@@ -1,15 +1,21 @@
 //require('config');
-//require('protptype.creep');
-require('role.harvester');
+require('protptype.creep');
+//harvester: require('role.harvester');
 
 //Game.spawns['Spawn1'].spawnCreep( [WORK, CARRY, MOVE], 'Harvester1' );
 
+var spawn = Game.spawns['Spawn1'];
+
 module.exports.loop = function() {
-  console.log(roleHarvester.role);
+  if (Game.creeps.length == 0) {
+    console.log('spawn the creep');
+    Creep.spawn(harvester.role, spawn, 'Harvester1');
+  }
+
   for(var name in Game.creeps) {
         var creep = Game.creeps[name];
         if(creep.memory.role == 'harvester') {
-            roleHarvester.run(creep);
+            harvester.run(creep);
         }
     }
 }

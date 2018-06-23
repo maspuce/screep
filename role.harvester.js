@@ -1,4 +1,4 @@
-var roleHarvester = {
+module.exports = {
     var role = [WORK, CARRY, MOVE];
 
     /** @param {Creep} creep **/
@@ -16,5 +16,3 @@ var roleHarvester = {
         }*/
 	}
 };
-
-module.exports = roleHarvester;
